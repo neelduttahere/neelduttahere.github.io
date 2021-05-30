@@ -1,0 +1,175 @@
+//antd files
+@import '~antd/lib/style/color/colorPalette.less';
+@import '~antd/dist/antd.less';
+@import '~antd/lib/style/themes/dark.less';
+
+//variables
+@primary: #2b2e4a;
+@secondary: #903749;
+@accent: #e84545;
+@background: #53354a;
+@text: white;
+@ubuntu-regular: 'Ubuntu', sans-serif;
+@mont-regular: 'Montserrat', sans-serif;
+
+//fonts from google
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+
+html, 
+body {
+    //overflow-x: hidden;
+    height: 100%;
+    margin: 0px;
+    .main-wrapper {
+        height: 100vh;
+        //width: 100%;
+        //background: @primary;
+        .header-wrapper {
+            z-index: 2;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background-color: @primary;
+            padding: 8px;
+            @media (max-width: 1366px) {
+                height: 64px;
+            }
+            .header-content {
+                margin-top: 8px;
+                .header-avatar {
+                    color: @primary;
+                    background-color: @accent;
+                    margin-left: 12px;
+                }
+                .header-title {
+                    font-family: 'Ubuntu', sans-serif;
+                    margin-left: 12px;
+                }
+                .nav-menu {
+                    font-family: 'Montserrat', sans-serif;
+                    //background-color: @secondary;
+                    margin-top: -8px;
+                }  
+            }                
+            
+        }
+        .page-one-wrapper {
+            position: relative;
+            //margin-top: 64px;
+            height: 100vh;
+            z-index: 0;
+            //height: calc(~"100vh - 64px");
+            background-color: @primary;
+            .title-card {
+                z-index: 1;
+                float: left;
+                display: block;
+                position: relative;
+                width: 480px;
+                padding: 12px;
+                background-color: @primary;
+                margin-top: 16%;
+                margin-left: 20%;
+                margin-right: 44px;
+                .title-text {
+                    font-family: 'Montserrat', sans-serif;
+                    font-style: italic;
+                    font-weight: 300;
+                    font-size: 42px;
+                    line-height: 50px;
+                    color: @accent;
+                    margin-bottom: 10px;
+                }
+                .subtitle-text {
+                    font-family: @ubuntu-regular;
+                    color: @secondary;
+                    font-size: 16px;
+                    
+                }
+            }
+            .profile-bubble {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                margin-top: 17%;
+                //float: left;
+                //margin-top: 16%;
+                img {
+                    width: 150px;
+                    height: auto;
+                    border-radius: 100px;
+                    border: 6px solid @secondary;
+                    box-shadow: -2px 2px 6px 8px rgba(0, 0, 0, 0.219);
+                    //-webkit-box-shadow: -2px 2px 6px 8px rgba(0,0,0,0.35);
+                    //-moz-box-shadow: -2px 2px 6px 8px rgba(0,0,0,0.35);
+
+                }
+            }
+            .backgroundScroll {
+                position: fixed;
+                width: 1100px;
+                bottom: 0;
+                right: 0;
+                img {
+                    width: 100%;
+                }
+            }
+            .background-circle {
+                position: fixed;
+                width: 600px;
+                height: 100%;
+                bottom: -100px;
+                right: 0;
+                margin-right: -100px;
+                img {
+                    width: 100%;
+                }
+            }
+            
+        }
+        .page-two-wrapper {
+            position: relative;
+            //margin-top: 64px;
+            height: 100vh;
+            z-index: 1;
+            //height: calc(~"100vh - 64px");
+            background-color: @background;
+            .page-2-title-card {
+                float: left;
+                display: block;
+                position: relative;
+                width: 670px;
+                margin-top: 12%;
+                margin-left: 8%;
+                .title-text {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 400;
+                    font-size: 36px;
+                    line-height: 60px;
+                    color: @accent;
+                }
+            }
+        }
+        
+      }
+}
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+body::-webkit-scrollbar-track {
+  background: @primary; 
+}  
+body::-webkit-scrollbar-thumb {
+    background: @accent;
+     
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: @secondary; 
+}  
+  
+  
