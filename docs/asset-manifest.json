@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fa5bc17b.chunk.css",
+    "main.js": "/static/js/main.6e380b2d.chunk.js",
+    "main.js.map": "/static/js/main.6e380b2d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.435e5c84.js",
+    "runtime-main.js.map": "/static/js/runtime-main.435e5c84.js.map",
+    "static/js/2.4aab4850.chunk.js": "/static/js/2.4aab4850.chunk.js",
+    "static/js/2.4aab4850.chunk.js.map": "/static/js/2.4aab4850.chunk.js.map",
+    "static/js/3.2c2addfe.chunk.js": "/static/js/3.2c2addfe.chunk.js",
+    "static/js/3.2c2addfe.chunk.js.map": "/static/js/3.2c2addfe.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.fa5bc17b.chunk.css.map": "/static/css/main.fa5bc17b.chunk.css.map",
+    "static/js/2.4aab4850.chunk.js.LICENSE.txt": "/static/js/2.4aab4850.chunk.js.LICENSE.txt",
+    "static/media/bg1.2b1f5d67.svg": "/static/media/bg1.2b1f5d67.svg",
+    "static/media/bg2.3f8b17ca.svg": "/static/media/bg2.3f8b17ca.svg",
+    "static/media/pagetwographic.1e6d9539.svg": "/static/media/pagetwographic.1e6d9539.svg",
+    "static/media/profile-photo-2x.77637996.jpg": "/static/media/profile-photo-2x.77637996.jpg",
+    "static/media/profile-photo.f041fc33.jpg": "/static/media/profile-photo.f041fc33.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.435e5c84.js",
+    "static/js/2.4aab4850.chunk.js",
+    "static/css/main.fa5bc17b.chunk.css",
+    "static/js/main.6e380b2d.chunk.js"
+  ]
+}
