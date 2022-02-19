@@ -135,13 +135,14 @@ body {
         .page-two-wrapper {
             position: relative;
             //margin-top: 64px;
-            height: 100vh;
+            height: 208vh;
             z-index: 1;
             //height: calc(~"100vh - 64px");
             background-color: @background;
             .page-2-title-card {
                 float: left;
                 display: block;
+                z-index: 2;
                 position: relative;
                 width: 670px;
                 margin-top: 12%;
@@ -150,9 +151,68 @@ body {
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 400;
                     font-size: 36px;
-                    line-height: 60px;
+                    line-height: 50px;
                     color: @accent;
                 }
+                
+            }
+            .page-2-graphic {
+              width: 300px;
+              position: relative;
+              z-index: 2;
+              height: auto;
+              float: right;
+              margin-top: 13%;
+              //margin-right: 12%;
+              margin-left: 4%;
+              img{
+                  width: 100%;
+              }
+            }
+            .background-scroll-2{
+              position: fixed;
+              bottom: 20px;
+              right: 20px;
+              width: 800px;
+              height: auto;
+              img{
+                width: 100%;
+              }
+            }
+            .page-two-content{
+              position: relative;
+              z-index: 2;
+              width: 700px;
+              margin-left: 8%;
+              margin-top: -60px;
+              .heading{
+                font-family: @mont-regular;
+                font-size: 18px;
+                color: @accent;
+              }
+              .body-text{
+                font-family: @ubuntu-regular;
+                
+              }
+              .skillsets{
+                background-color: @background;
+                padding-bottom: 12px;
+                padding-top: 8px;
+                width: 600px;
+                padding-right: 16px;
+
+                .skillset-heading{
+                  color: @accent;
+                  font-size: 18px;
+                  font-family: @ubuntu-regular;
+                }
+                .skillset-list{
+                  font-family: @ubuntu-regular;
+                  opacity: 70%;
+                  line-height: 16px;
+
+                }
+              }
             }
         }
         
