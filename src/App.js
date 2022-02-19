@@ -1,33 +1,25 @@
-import './App.less';
+import './psycho.less';
+import Fade from 'react-reveal/Fade';
+import Logo from "./static/psychoperp_logo.png";
 import { Avatar, Row, Col, Tabs } from 'antd';
 import PageOne from "./components/PageOne";
 import PageTwo from "./components/PageTwo";
+import { Typography} from 'antd';
 const { TabPane } = Tabs;
+const { Title } = Typography;
 function App() {
     
   return (
-    <div className="main-wrapper">
-      <div className="header-wrapper">
-            <Row className="header-content">
-                <Col span={16}>
-                    <Avatar className="header-avatar">ND</Avatar>
-                    <span className="header-title">shubhranil_dutta@hotmail.com</span>
-                </Col>
-                <Col span={8}>
-                    <div className="nav-menu">
-                        <Tabs defaultActiveKey="0">
-                            <TabPane tab="Welcome" key="1"/>                            
-                            <TabPane tab="About" key="2"/>                            
-                            <TabPane tab="Experience" key="3"/>
-                            <TabPane tab="Contact" key="4"/>                            
-                        </Tabs>
-                    </div>
-                </Col>
-            </Row>
-            
+    <div className='PsychoWrapper'>
+      <div className='content'>
+        <div className='img-div'>
+          <img src={Logo} alt='psychoPerp'/>
         </div>
-        <PageOne/>
-        <PageTwo/>
+        <Title className='title'>Perps still at bay.</Title>
+        <Title level={4} className='subtitle'>Coming Soon</Title>
+      </div>
+      
+      
     </div>
   );
 }
