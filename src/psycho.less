@@ -1,45 +1,160 @@
-
-//fonts from google
+@import '~antd/lib/style/color/colorPalette.less';
+@import '~antd/dist/antd.less';
+@import '~antd/lib/style/themes/dark.less';
+// fonts from google
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');
 @mont-regular: 'Montserrat', sans-serif;
+//@mont-semi-bold : 'Montserrat', sans-serif;
+@mobile:    ~"only screen and (min-width: 360px) and (max-width: 540px)";
+@GalaxyFold:    ~"only screen and (min-width: 280px) and (max-width: 360px)";
+
 .PsychoWrapper{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
   background-color: black;
-  overflow: hidden;
+  //overflow: hidden;
   font-family: @mont-regular;
-  color: white;
-  .content {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    .img-div {
-      display: flex;
-      justify-content: center;
-      img {
-        // display: flex;
-        width: 100px;
-        height: auto;
-        border-radius: 50%;
-        //margin: auto;
-        // justify-content: center;
+  .section1 {
+    padding: 2.5rem;
+    background-color: rgba(240, 248, 255, 0.123);
+    backdrop-filter: blur(36px);
+    width: 750px;
+    border-radius: 12px;
+    //margin: auto;
+    @media @mobile {
+      width: 360px;
+      padding: 2rem;
+    }
+    @media @GalaxyFold {
+      padding: 1rem;
+      width: 265px;
+      margin-top: 2rem;
+    }
+    
+    .main-img{
+      width: 298px;
+      @media @GalaxyFold {
+        width: 230px;
+      }
+      .img {
+        border-radius: 12px;
       }
     }
-    .title {
-      text-align: center;
-    }
-    .subtitle {
-      text-align: center;
-      font-weight: 300;
-      color: rgb(138, 138, 138);
-    }
-  }
-  .footer {
+    .content{
+      width: 300px;
+      // background-color: rgba(250, 235, 215, 0.418);
+      margin-top: 32px;
+      @media @GalaxyFold {
+        width: 232px;
+      }
+      .img-div {        
+        width: 80px;
+        height: auto;
+        margin: auto;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+      .title-div {
+        margin-top: 12px;
+        width: 100%;
+        //background-color: #37A9EA;
+        
+        .title{
+          margin: auto;
+          font-size: 45px;
+          @media @GalaxyFold {
+            font-size: 36px;
+          }
+          font-weight: 800;
+          //background-color: black;
+          
+          .accent {
+            color: #37A9EA;
+          }
+        }
+      }
 
+      .subtitle-div {
+        width: 100%;
+        //background-color: #37A9EA;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        .subtitle{
+          margin: auto;
+          font-size: 18px;
+          @media @GalaxyFold {
+            font-size: 16px;
+          }
+          font-weight: 300;
+          text-align: center;
+          line-height: 22px;
+        }
+      }
+      
+    }
+    .call-to-action {
+      margin-top: 12px;
+      background-color: #37A9EA;
+      width: 100%;
+      padding: 1.4rem;
+      border-radius: 12px;
+      .action-text {
+        font-weight: 800;
+        font-style: italic;
+        font-size: 27px;
+        @media @GalaxyFold {
+          font-size: 20px;
+          text-align: center;
+        }
+        @media @mobile {
+          text-align: center;
+        }
+        margin-bottom: 0;
+      }
+      .icon-div {
+        display: flex;
+        gap: 30px;
+        float: right;
+        @media @GalaxyFold {
+          float: none;
+          margin-top: 12px;
+          margin-left: 18px;
+        }
+        // background-color: black;
+        @media @mobile {
+          float: none;
+          align-items: center;
+          justify-content: center;
+          margin-top: 12px;
+        }
+        .icon {
+          width: 32px;
+          // background-color: #37A9EA;
+          @media @GalaxyFold {
+            width: 28px;
+          }
+          height: auto;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
   }
+  
   
 }
