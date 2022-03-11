@@ -103,7 +103,7 @@ function App() {
                 <Title className='title'>Psycho<span className='accent'>Perp</span></Title>
               </Row>
               <Row className='subtitle-div'>
-                <Text className='subtitle'>1000s of Psychotic Perpetuators are about to be let loose onto the Metaverse this March</Text>
+                <Text className='subtitle'>1000s of Psychotic Perpetuators have been let loose! Get yours today for <b>free!</b></Text>
               </Row>
             </div>
            
